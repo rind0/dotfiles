@@ -9,7 +9,6 @@ on_i = 1
 
 [[plugins]]
 repo        = 'neoclide/coc.nvim'
+merged      = '0'
 rev         = 'release'
 on_i        = 1
-merged      = '0'
-hook_source = 'call coil398#init#coc#hook_source()'

@@ -42,3 +42,11 @@ set incsearch                         " 順次検索
 set wrapscan                          " ループ
 set hlsearch                          " 検索結果をハイライト
 nmap <Esc><Esc> :nohlsearch<CR><Esc>  " ハイライト解除
+
+" ハイライトの設定
+highlight Normal ctermbg=NONE guibg=NONE
+highlight NonText ctermbg=NONE guibg=NONE
+highlight LineNr ctermbg=NONE guibg=NONE
+highlight SpecialKey ctermbg=NONE guibg=NONE
+highlight Folded ctermbg=NONE guibg=NONE
+highlight EndOfBuffer ctermbg=NONE guibg=NONE
