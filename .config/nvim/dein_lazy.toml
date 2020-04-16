@@ -1,11 +1,30 @@
 [[plugins]]
+repo = 'jiangmiao/auto-pairs'
+on_i = 1
+
+[[plugins]]
+repo        = 'vim-airline/vim-airline'
+hook_add = '''
+  " theme
+  let g:airline_theme = 'bubblegum'
+
+  " unicode symbols
+  let g:airline_left_sep = '»'
+  let g:airline_left_sep = '▶'
+  let g:airline_right_sep = '«'
+  let g:airline_right_sep = '◀'
+
+  " powerline symbols
+  let g:airline_left_sep = ''
+  let g:airline_left_alt_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_right_alt_sep = ''
+'''
+
+[[plugins]]
 repo  = 'cespare/vim-toml'
 on_ft = ['toml']
 on_i  = 1
-
-[[plugins]]
-repo = 'Townk/vim-autoclose'
-on_i = 1
 
 [[plugins]]
 repo        = 'neoclide/coc.nvim'

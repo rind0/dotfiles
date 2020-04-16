@@ -7,3 +7,6 @@ hook_add = '''
   colorscheme Ariake-Dark
   set background=dark
 '''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
