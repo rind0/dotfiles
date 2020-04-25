@@ -1,0 +1,17 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo     = 'davidcelis/vim-ariake-dark'
+hook_add = '''
+  colorscheme Ariake-Dark
+  set background=dark
+'''
+
+[[plugins]]
+repo     = 'itchyny/lightline.vim'
+hook_add = '''
+  let g:lightline = {
+    \ 'colorscheme': 'seoul256',
+    \ }
+'''
