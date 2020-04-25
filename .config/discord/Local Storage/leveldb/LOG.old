@@ -1,3 +1,3 @@
-2020/04/24-15:12:14.250 2206 Reusing MANIFEST leveldb/MANIFEST-000001
-2020/04/24-15:12:14.251 2206 Recovering log #3
-2020/04/24-15:12:14.251 2206 Reusing old log leveldb/000003.log 
+2020/04/24-16:52:18.078 fec9 Reusing MANIFEST leveldb/MANIFEST-000001
+2020/04/24-16:52:18.078 fec9 Recovering log #4
+2020/04/24-16:52:18.078 fec9 Reusing old log leveldb/000004.log 
