@@ -1,14 +1,16 @@
 # 全てのファイルを無視
 /*
+/.config/*
 
 # ドットから始まる設定ファイルを無視
 /.*
+/.config/.*
 
 # Git管理対象
-!/alacritty
-!/.compton.conf
-!/fish
+!/.config/alacritty
+!/.config/.compton.conf
+!/.config/fish
 !/.gitignore
 !/.tmux.conf
-!/nvim
+!/.config/nvim
 !/xorg.conf.d
