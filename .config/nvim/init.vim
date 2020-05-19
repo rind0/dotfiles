@@ -10,7 +10,7 @@ let dein_dir = expand('$HOME/.cache/dein')
 if dein#load_state(dein_dir)
   call dein#begin(dein_dir)
 
-  let toml_dir = expand('$HOME/.config/nvim')
+  let toml_dir = expand('$HOME/dotfiles/.config/nvim')
   call dein#load_toml(toml_dir . '/dein.toml',       {'lazy': 0})
   call dein#load_toml(toml_dir . '/dein_lazy.toml',  {'lazy': 1})
 
@@ -34,8 +34,8 @@ set title                             " ファイル名の表示
 " タブ/インデント設定
 set autoindent                        " 自動インデント
 set expandtab                         " 入力モードでTab押下時に半角スペースを挿入
-set shiftwidth=2                      " インデント幅
-set tabstop=2                         " タブの行事幅
+set shiftwidth=4                      " インデント幅
+set tabstop=4                         " タブの行事幅
 
 " ファイル処理関連設定
 set autoread                          " 外部でファイルが変更された場合は読み直す
