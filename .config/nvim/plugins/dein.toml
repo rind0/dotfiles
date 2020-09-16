@@ -3,10 +3,6 @@ repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo     = 'davidcelis/vim-ariake-dark'
-hook_add = '''
-    set background=dark
-    colorscheme Ariake-Dark
-'''
 
 [[plugins]]
 repo     = 'itchyny/lightline.vim'
