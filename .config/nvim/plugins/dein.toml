@@ -4,14 +4,10 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo     = 'davidcelis/vim-ariake-dark'
 hook_add = '''
-  colorscheme Ariake-Dark
-  set background=dark
+    set background=dark
+    colorscheme Ariake-Dark
 '''
 
 [[plugins]]
 repo     = 'itchyny/lightline.vim'
-hook_add = '''
-  let g:lightline = {
-    \ 'colorscheme': 'seoul256',
-    \ }
-'''
+hook_add = 'source $HOME/dotfiles/.config/nvim/plugin_settings/lightline.vim'

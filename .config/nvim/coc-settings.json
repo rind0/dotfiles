@@ -1,0 +1,9 @@
+{
+    "languageserver": {
+        "rust": {
+            "command": "rustup",
+            "args": ["run", "stable", "rls"],
+            "filetypes": ["rust"]
+        }
+    }
+}
