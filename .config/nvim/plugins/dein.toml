@@ -7,3 +7,6 @@ repo     = 'davidcelis/vim-ariake-dark'
 [[plugins]]
 repo     = 'itchyny/lightline.vim'
 hook_add = 'source $HOME/dotfiles/.config/nvim/plugin_settings/lightline.vim'
+
+[[plugins]]
+repo = 'kien/ctrlp.vim'
