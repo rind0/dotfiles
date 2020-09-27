@@ -1,2 +1,2 @@
 set background=dark
-colorscheme Ariake-Dark
+colorscheme ariake-dark
