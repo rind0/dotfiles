@@ -14,11 +14,12 @@ rev         = 'release'
 on_i        = 1
 
 [[plugins]]
-repo    = 'dense-analysis/ale'
-on_i    = 1
-
-[[plugins]]
 repo        = 'omnisharp/omnisharp-vim'
 on_ft       = ['cs']
 on_i        = 1
+bulid       = '''
+    'windows' : 'C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\MSBuild.exe server/OmniSharp.sln /p:Platform="Any CPU"',
+    'mac' : 'xbuild server/OmniSharp.sln',
+    'unix' : 'xbuild server/OmniSharp.sln'
+'''
 hook_source = 'let g:OmniSharp_server_stdio = 0'
