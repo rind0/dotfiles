@@ -1,7 +1,7 @@
 " 画面表示の設定
 set number                  " 行番号
 set title                   " ファイル名の表示
-syntax enable               " 構文ハイライト
+syntax on                   " 構文ハイライト
 
 " タブ/インデント設定
 set autoindent              " 自動インデント
