@@ -1,6 +1,6 @@
 # exa
 alias ls='exa -abghHliS'
-alias lst='exa -lT'
+alias lst='exa -lTL=4'
 
 # procs
 alias ps='procs --sortd cpu'
