@@ -9,5 +9,5 @@ alias pst='procs --tree'
 # cd ls
 function cd
   builtin cd $argv
-    lst
+    ls
 end
