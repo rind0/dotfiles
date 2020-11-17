@@ -1,5 +1,6 @@
 " 画面表示の設定
 set number                  " 行番号
+set relativenumber          " 相対行番号
 set title                   " ファイル名の表示
 syntax on                   " 構文ハイライト
 
