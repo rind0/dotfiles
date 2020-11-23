@@ -6,6 +6,7 @@
 
 # Git管理対象
 !/.config/alacritty
-!/.config/.compton.conf
 !/.config/fish
 !/.config/nvim
+!/.config/sway
+!/.config/.compton.conf
