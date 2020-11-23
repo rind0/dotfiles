@@ -58,6 +58,6 @@ colors:
     cyan:    '0x78DCE8'
     white:   '0xFCFCFA'
 
-shell:
+#shell:
   #program: C:\Windows\System32\wsl.exe # WSL
-  program: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe # PowerShell
+  #program: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe # PowerShell
