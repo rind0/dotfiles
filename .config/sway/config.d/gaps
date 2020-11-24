@@ -1,6 +1,6 @@
 gaps {
-    inner 4
-    outer 4
+    inner 10
+    outer 10
 }
 
 smart_gaps on
