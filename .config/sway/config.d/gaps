@@ -1,0 +1,6 @@
+gaps {
+    inner 4
+    outer 4
+}
+
+smart_gaps on

@@ -1,0 +1,60 @@
+set $mode_audio "Audio"
+mode $mode_audio {
+    bindsym --to-code {
+        # Back to normal
+        Return mode default
+        Escape mode default
+    }
+}
+
+set $mode_resize "Resize window"
+mode $mode_resize {
+    bindsym --to-code {
+        h       exec swaymsg resize shrink  width   10
+        Ctrl+h  exec swaymsg resize shrink  width   1
+        j       exec swaymsg resize grow    height  10
+        Ctrl+j  exec swaymsg resize grow    height  1
+        k       exec swaymsg resize shrink  height  10
+        Ctrl+k  exec swaymsg resize shrink  height  1
+        l       exec swaymsg resize grow    width   10
+        Ctrl+l  exec swaymsg resize grow    width   1
+
+        # Back to normal
+        Return mode default
+        Escape mode default
+    }
+}
+
+set $mode_system "System exit"
+mode $mode_system {
+    bindsym --to-code {
+        e exec sway-exit exit,      mode default
+        l exec sway-exit lock,      mode default
+        s exec sway-exit suspend,   mode default
+        r exec sway-exit reboot,    mode default
+        h exec sway-exit shutdown,  mode default
+
+        # Back to normal
+        Return mode default
+        Escape mode default
+    }
+}
+
+set $mode_workspaces_monitors "Move workspace between monitors"
+mode $mode_workspaces_monitors {
+    bindsym --to-code {
+        h exec swaymsg move workspace to output left,   mode default
+        l exec swaymsg move workspace to output right,  mode default
+
+        # Back to normal
+        Return mode default
+        Escape mode default
+    }
+}
+
+bindsym --to-code {
+    $mod+a mode $mode_audio
+    $mod+r mode $mode_resize
+    $mod+e mode $mode_system
+    $mod+m mode $mode_workspaces_monitors
+}
