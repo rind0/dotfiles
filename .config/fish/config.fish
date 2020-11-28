@@ -1,5 +1,3 @@
-export PATH="$HOME/.cargo/bin:$PATH"
-
 # exa
 alias ls='exa -abghHliS'
 alias lst='exa -lTL=4'
