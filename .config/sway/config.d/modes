@@ -25,14 +25,28 @@ mode $mode_resize {
     }
 }
 
-set $mode_system "System exit"
+set $mode_system "System: (e)xit (l)ock (s)uspend (r)eboot s(h)utdown"
 mode $mode_system {
     bindsym --to-code {
-        e exec sway-exit exit,      mode default
-        l exec sway-exit lock,      mode default
-        s exec sway-exit suspend,   mode default
-        r exec sway-exit reboot,    mode default
-        h exec sway-exit shutdown,  mode default
+        e exec swaymsg              exit,       mode default
+        l exec swaylock \
+            --screenshots \
+            --clock \
+            --indicator \
+            --indicator-radius      100 \
+            --indicator-thickness   8 \
+            --effect-blur           8x4 \
+            --effect-vignette       0.5:0.5 \
+            --ring-color            4682b4 \
+            --key-hl-color          4169e1 \
+            --line-color            00000000 \
+            --inside-color          00000088 \
+            --separator-color       00000000 \
+            --grace                 2 \
+            --fade-in               0.2,        mode default
+        s exec swaymsg              suspend,    mode default
+        r exec systemctl            reboot,     mode default
+        h exec systemctl            poweroff,   mode default
 
         # Back to normal
         Return mode default
