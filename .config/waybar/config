@@ -1,0 +1,32 @@
+{
+    "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["disk", "memory", "cpu", "tray", "battery", "clock"],
+    "sway/window": {
+        "max-length": 40
+    },
+    "disk": {
+        "interval": 30,
+        "format":   "{percentage_used}% ",
+        "path":     "/"
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "cpu": {
+        "format":   "{usage}% ",
+        "tooltip":  false
+    },
+    "tray": {
+        "icon-size":    20,
+        "spacing":      10
+    },
+    "battery": {
+        "format":       "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    }
+}

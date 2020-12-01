@@ -9,4 +9,6 @@
 !/.config/fish
 !/.config/nvim
 !/.config/sway
+!/.config/waybar
+!/.config/wofi
 !/.config/.compton.conf
