@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["sway/window"],
-    "modules-right": ["disk", "memory", "cpu", "tray", "battery", "clock"],
+    "modules-right": ["disk", "memory", "cpu", "battery", "tray", "clock"],
     "sway/window": {
         "max-length": 40
     },
@@ -18,13 +18,13 @@
         "format":   "{usage}% ",
         "tooltip":  false
     },
-    "tray": {
-        "icon-size":    20,
-        "spacing":      10
-    },
     "battery": {
         "format":       "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
+    },
+    "tray": {
+        "icon-size":    20,
+        "spacing":      10
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
