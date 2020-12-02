@@ -13,14 +13,14 @@ enable_experimental_conpty_backend: true
 font:
   normal:
     family: Cica
-    style: Regular
+    style:  Regular
     #family: MyricaM M
   bold:
     family: Cica
-    style: Bold
+    style:  Bold
   italic:
     family: Cica
-    style: Italic
+    style:  Italic
   size: 12
 
 # Background opacity (背景の透過)
