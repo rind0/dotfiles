@@ -1,9 +1,33 @@
 set $mode_audio "Audio"
 mode $mode_audio {
     bindsym --to-code {
+        XF86AudioRaiseVolume    exec pactl set-sink-volume  0 +5%
+        XF86AudioLowerVolume    exec pactl set-sink-volume  0 -5%
+        XF86AudioMute           exec pactl set-sink-mute    0 toggle
+        
+        XF86AudioPlay   exec playerctl play
+        XF86AudioPause  exec playerctl pause
+        XF86AudioNext   exec playerctl next
+        XF86AudioPrev   exec playerctl previous
+
         # Back to normal
         Return mode default
         Escape mode default
+    }
+}
+
+set $mode_brightness "Brightness"
+mode $mode_brightness {
+    bindsym --to-code {
+        XF86MonBrightnessUp     exec brightnessctl -c backlight set +5%
+        XF86MonBrightnessDown   exec brightnessctl -c backlight set 5%-
+
+        XF86KbdBrightnessUp     exec brightnessctl -d smc::kbd_backlight set +5%
+        XF86KbdBrightnessDown   exec brightnessctl -d smc::kbd_backlight set 5%-
+
+        # Back to normal
+        Return exec brightnessctl -s, mode default
+        Escape exec brightnessctl -s, mode default
     }
 }
 
@@ -44,7 +68,7 @@ mode $mode_system {
             --separator-color       00000000 \
             --grace                 2 \
             --fade-in               0.2,        mode default
-        s exec swaymsg              suspend,    mode default
+        s exec systemctl            suspend,    mode default
         r exec systemctl            reboot,     mode default
         h exec systemctl            poweroff,   mode default
 
@@ -68,6 +92,7 @@ mode $mode_workspaces_monitors {
 
 bindsym --to-code {
     $mod+a mode $mode_audio
+    $mod+b mode $mode_brightness
     $mod+r mode $mode_resize
     $mod+e mode $mode_system
     $mod+m mode $mode_workspaces_monitors

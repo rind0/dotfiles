@@ -1,3 +1,6 @@
+# nvim
+alias vi='nvim'
+
 # exa
 alias ls='exa -abghHliS'
 alias lst='exa -lTL=4'
