@@ -5,11 +5,12 @@ repo = 'Shougo/dein.vim'
 repo = 'davidcelis/vim-ariake-dark'
 
 [[plugins]]
-repo = 'frazrepo/vim-rainbow'
+repo        = 'frazrepo/vim-rainbow'
+hook_add    = 'let g:rainbow_active = 1'
 
 [[plugins]]
-repo     = 'itchyny/lightline.vim'
-hook_add = 'source $HOME/dotfiles/.config/nvim/plugin_settings/lightline.vim'
+repo        = 'itchyny/lightline.vim'
+hook_add    = 'source $HOME/dotfiles/.config/nvim/plugin_settings/lightline.vim'
 
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
