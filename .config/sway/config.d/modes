@@ -55,7 +55,6 @@ mode $mode_system {
         e exec swaymsg              exit,       mode default
         l exec swaylock \
             --screenshots \
-            --clock \
             --indicator \
             --indicator-radius      100 \
             --indicator-thickness   8 \
