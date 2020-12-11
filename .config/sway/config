@@ -60,7 +60,7 @@ bindsym --to-code {
 }
 
 # Load configs
-include "~/.config/sway/config.d/*
+include ~/.config/sway/config.d/*
 
 # Load systemd integration
 include /etc/sway/config.d/*
