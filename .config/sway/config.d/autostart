@@ -1,1 +1,2 @@
+exec pulseaudio --start
 exec fcitx-autostart
