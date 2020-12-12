@@ -1,2 +1,2 @@
-exec pulseaudio --start
-exec fcitx-autostart
+exec --no-startup-id pulseaudio --start
+exec --no-startup-id fcitx-autostart
