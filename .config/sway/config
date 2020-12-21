@@ -14,7 +14,8 @@ set $menu exec fullscreen disable, exec wofi -S drun
 # Device settings
 #
 # Input
-input type:pointer accel_profile flat
+input type:pointer  accel_profile   flat
+input type:touchpad tap             enable
 
 # Output
 output * bg $HOME/Pictures/Wallpapers/jehuty_fhd.jpg fill
