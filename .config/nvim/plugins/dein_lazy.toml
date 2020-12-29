@@ -23,3 +23,8 @@ bulid       = '''
     'unix' : 'xbuild server/OmniSharp.sln'
 '''
 hook_add    = 'let g:OmniSharp_server_stdio = 0'
+
+[[plugins]]
+repo    = 'habamax/vim-godot'
+on_ft   = ['gd']
+on_i    = 1

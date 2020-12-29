@@ -1,9 +1,9 @@
 {
     "languageserver": {
-        "rust": {
-            "command": "rustup",
-            "args": ["run", "stable", "rls"],
-            "filetypes": ["rust"]
+        "godot": {
+            "host": "127.0.0.1",
+            "filetypes": ["gdscript"],
+            "port": 6008
         }
     }
 }
