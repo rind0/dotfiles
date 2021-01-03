@@ -14,3 +14,8 @@ hook_add    = 'source $HOME/dotfiles/.config/nvim/plugin_settings/lightline.vim'
 
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
+
+[[plugins]]
+repo        = 'neoclide/coc.nvim'
+merged      = '0'
+rev         = 'release'

@@ -8,12 +8,6 @@ on_ft = ['toml']
 on_i  = 1
 
 [[plugins]]
-repo        = 'neoclide/coc.nvim'
-merged      = '0'
-rev         = 'release'
-on_i        = 1
-
-[[plugins]]
 repo        = 'omnisharp/omnisharp-vim'
 on_ft       = ['cs']
 on_i        = 1
