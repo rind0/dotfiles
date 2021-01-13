@@ -3,22 +3,5 @@ repo = 'jiangmiao/auto-pairs'
 on_i = 1
 
 [[plugins]]
-repo  = 'cespare/vim-toml'
-on_ft = ['toml']
-on_i  = 1
-
-[[plugins]]
-repo        = 'omnisharp/omnisharp-vim'
-on_ft       = ['cs']
-on_i        = 1
-bulid       = '''
-    'windows' : 'C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\MSBuild.exe server/OmniSharp.sln /p:Platform="Any CPU"',
-    'mac' : 'xbuild server/OmniSharp.sln',
-    'unix' : 'xbuild server/OmniSharp.sln'
-'''
-hook_add    = 'let g:OmniSharp_server_stdio = 0'
-
-[[plugins]]
 repo    = 'habamax/vim-godot'
 on_ft   = ['gd']
-on_i    = 1
