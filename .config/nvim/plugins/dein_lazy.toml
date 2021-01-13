@@ -1,3 +1,4 @@
 [[plugins]]
-repo    = 'habamax/vim-godot'
-on_ft   = ['gd']
+repo    = 'kkiyama117/coc-toml'
+depends = 'coc.nvim'
+on_ft   = ['toml']
