@@ -15,3 +15,6 @@ source $HOME/.config/nvim/highlight.vim
 
 " 環境設定
 source $HOME/.config/nvim/environment.vim
+
+" ショートカット
+source $HOME/.config/nvim/shortcut.vim
