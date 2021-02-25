@@ -14,3 +14,5 @@ function cd
   builtin cd $argv
     ls
 end
+
+alias cls='clear && ls'
