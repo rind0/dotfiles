@@ -16,3 +16,10 @@ hook_add    = 'source $HOME/dotfiles/.config/nvim/plugin_settings/lightline.vim'
 repo        = 'neoclide/coc.nvim'
 merged      = 0
 rev         = 'release'
+hook_add    = '''
+    let g:coc_global_extensions = [
+    \   'coc-lists',
+    \   'coc-marketplace',
+    \   'coc-pairs',
+    \]
+'''

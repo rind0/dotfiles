@@ -1,7 +1,7 @@
 [[plugins]]
-repo    = 'kkiyama117/coc-toml'
-depends = 'coc.nvim'
-on_ft   = ['toml']
+repo        = 'kkiyama117/coc-toml'
+depends     = 'coc.nvim'
+on_ft       = ['toml']
 
 [[plugins]]
 repo    = 'OmniSharp/omnisharp-vim'
