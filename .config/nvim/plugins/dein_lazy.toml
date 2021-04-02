@@ -1,4 +1,9 @@
 [[plugins]]
+repo        = 'rust-lang/rust.vim'
+on_ft       = ['rust', 'rs']
+hook_add    = 'let g:rustfmt_autosave = 1'
+
+[[plugins]]
 repo        = 'kkiyama117/coc-toml'
 depends     = 'coc.nvim'
 on_ft       = ['toml']

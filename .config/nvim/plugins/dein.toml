@@ -21,5 +21,6 @@ hook_add    = '''
     \   'coc-lists',
     \   'coc-marketplace',
     \   'coc-pairs',
+    \   'coc-rust-analyzer',
     \]
 '''
