@@ -2,7 +2,7 @@
     "languageserver": {
         "godot": {
             "host": "127.0.0.1",
-            "filetypes": ["gd", "gdscript3"],
+            "filetypes": ["gdscript"],
             "port": 6008
         }
     }

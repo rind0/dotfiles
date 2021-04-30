@@ -13,5 +13,5 @@ repo    = 'OmniSharp/omnisharp-vim'
 on_ft   = ['cs']
 
 [[plugins]]
-repo    = 'clktmr/vim-gdscript3'
-on_ft   = ['gd', 'gdscript3']
+repo    = 'habamax/vim-godot'
+on_ft   = ['gdscript']
