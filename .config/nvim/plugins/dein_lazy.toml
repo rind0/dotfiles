@@ -17,7 +17,6 @@ repo        = 'habamax/vim-godot'
 on_ft       = ['gdscript']
 hook_add    = '''
     func! GodotSettings() abort
-        setlocal foldmethod=expr
         setlocal tabstop=4
         nnoremap <buffer> <F4> :GodotRunLast<CR>
         nnoremap <buffer> <F5> :GodotRun<CR>
