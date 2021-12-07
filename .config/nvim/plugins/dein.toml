@@ -5,22 +5,21 @@ repo = 'Shougo/dein.vim'
 repo = 'davidcelis/vim-ariake-dark'
 
 [[plugins]]
-repo        = 'frazrepo/vim-rainbow'
-hook_add    = 'let g:rainbow_active = 1'
+repo = 'frazrepo/vim-rainbow'
+hook_add = 'let g:rainbow_active = 1'
 
 [[plugins]]
-repo        = 'itchyny/lightline.vim'
-hook_add    = 'source $HOME/dotfiles/.config/nvim/plugin_settings/lightline.vim'
+repo = 'itchyny/lightline.vim'
+hook_add = 'source $HOME/.config/nvim/plugin_settings/lightline.vim'
 
 [[plugins]]
-repo        = 'neoclide/coc.nvim'
-merged      = 0
-rev         = 'release'
-hook_add    = '''
-    let g:coc_global_extensions = [
-    \   'coc-lists',
-    \   'coc-marketplace',
-    \   'coc-pairs',
-    \   'coc-rust-analyzer',
-    \]
-'''
+repo = 'vim-denops/denops.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+if = '!has("nvim")'
+hook_add = 'let g:lsp_completion_documentation_enabled = 0'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+if = '!has("nvim")'
