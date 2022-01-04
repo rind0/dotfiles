@@ -14,12 +14,19 @@ set $menu exec fullscreen disable, exec wofi -S drun
 # Device settings
 #
 # Input
-input type:pointer  accel_profile   flat
-input type:touchpad tap             enable
+input * accel_profile flat
+input type:pointer {
+    pointer_accel 0
+}
+input type:touchpad {
+    tap enable
+}
 
 # Output
+output DP-1 res 1920x1080@144hz pos 0 0
+output DP-2 res 1920x1080@60hz pos 1920 0
+#output * res 1920x1080@144hz pos 0,0
 output * bg $HOME/Pictures/Wallpapers/jehuty_fhd.jpg fill
-output * res 1920x1080@144hz pos 0,0
 
 #
 # Borders
