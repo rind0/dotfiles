@@ -10,7 +10,10 @@ hook_add = 'let g:rainbow_active = 1'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
-hook_add = 'source $HOME/.config/nvim/plugin_settings/lightline.vim'
+hook_add = 'source $HOME/.config/nvim/plugins/lightline.vim'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
 repo = 'vim-denops/denops.vim'

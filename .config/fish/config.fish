@@ -16,3 +16,4 @@ function cd
 end
 
 alias cls='clear && ls'
+alias reflectorjp='sudo reflector --country 'Japan' --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'

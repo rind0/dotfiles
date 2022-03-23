@@ -2,7 +2,7 @@
 repo = 'Shougo/ddc.vim'
 depends = ['denops.vim', 'context_filetype.vim', 'pum.vim']
 on_event = 'InsertEnter'
-hook_source = 'source $HOME/.config/nvim/plugin_settings/ddc.vim'
+hook_source = 'source $HOME/.config/nvim/plugins/ddc.vim'
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
@@ -70,6 +70,11 @@ repo = 'rafamadriz/friendly-snippets'
 on_source = 'ddc.vim'
 
 [[plugins]]
+repo = 'matsui54/denops-signature_help'
+on_source = 'ddc.vim'
+hook_source = ''' call signature_help#enable() '''
+
+[[plugins]]
 repo = 'matsui54/denops-popup-preview.vim'
 on_source = 'ddc.vim'
-hook_source = 'source $HOME/.config/nvim/plugin_settings/denops_popup_preview.vim'
+hook_source = 'source $HOME/.config/nvim/plugins/denops_popup_preview.vim'
