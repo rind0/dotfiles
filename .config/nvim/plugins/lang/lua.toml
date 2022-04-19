@@ -1,0 +1,4 @@
+[[plugins]]
+repo = 'folke/lua-dev.nvim'
+lazy = 1
+on_lua = ['nvim-lsp-installer']
