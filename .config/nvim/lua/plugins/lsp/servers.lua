@@ -25,10 +25,6 @@ general.on_attach = function(_, bufnr)
         { 'n', 'gf', vim.lsp.buf.definition },
         { 'n', ']c', function() vim.diagnostic.goto_next(goto_opts) end },
         { 'n', '[c', function() vim.diagnostic.goto_prev(goto_opts) end },
-        { 'n', '<C-d>', function() lsp_utils.send_key('<C-d>', bufnr) end },
-        { 'n', '<C-u>', function() lsp_utils.send_key('<C-u>', bufnr) end },
-        { 'n', '<C-f>', function() lsp_utils.send_key('<C-f>', bufnr) end },
-        { 'n', '<C-b>', function() lsp_utils.send_key('<C-b>', bufnr) end },
     }
     utils.set_keymaps(maps, {
         buffer = bufnr,
