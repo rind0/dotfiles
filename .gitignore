@@ -6,7 +6,6 @@
 !/.config/fontconfig
 !/.config/nvim
 !/.config/sway
-!/.config/vim
 !/.config/waybar
 !/.config/wofi
 !/.config/.compton.conf
