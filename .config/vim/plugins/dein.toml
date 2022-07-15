@@ -1,0 +1,25 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'davidcelis/vim-ariake-dark'
+
+[[plugins]]
+repo = 'frazrepo/vim-rainbow'
+hook_add = '''
+let g:rainbow_active = 1
+'''
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+let g:lightline = {
+    \ 'colorscheme': 'seoul256'
+    \ }
+'''
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'vim-denops/denops.vim'
