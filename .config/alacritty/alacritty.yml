@@ -15,7 +15,6 @@ font:
   normal:
     family: Cica
     style: Regular
-    #family: MyricaM M
   bold:
     family: Cica
     style: Bold
@@ -24,34 +23,31 @@ font:
     style: Italic
   size: 12
 
-# Colors (Monokai Pro)
 colors:
-  # Default colors
   primary:
-    background: '0x2D2A2E'
-    foreground: '0xFCFCFA'
-
-  # Normal colors
+    background: '0x1e2030'
+    foreground: '0x7f85a3'
+  cursor:
+    text: '0x7f85a3'
+    cursor: '0x808080'
   normal:
-    black: '0x403E41'
-    red: '0xFF6188'
-    green: '0xA9DC76'
-    yellow: '0xFFD866'
-    blue: '0xFC9867'
-    magenta: '0xAB9DF2'
-    cyan: '0x78DCE8'
-    white: '0xFCFCFA'
-
-  # Bright colors
+    black: '0x444a73'
+    red: '0xff5370'
+    green: '0x4fd6be'
+    yellow: '0xffc777'
+    blue: '0x3e68d7'
+    magenta: '0xfc7b7b'
+    cyan: '0x86e1fc'
+    white: '0xd0d0d0'
   bright:
-    black: '0x727072'
-    red: '0xFF6188'
-    green: '0xA9DC76'
-    yellow: '0xFFD866'
-    blue: '0xFC9867'
-    magenta: '0xAB9DF2'
-    cyan: '0x78DCE8'
-    white: '0xFCFCFA'
+    black: '0x828bb8'
+    red: '0xff98a4'
+    green: '0xc3e88d'
+    yellow: '0xffc777'
+    blue: '0x82aaff'
+    magenta: '0xff966c'
+    cyan: '0xb4f9f8'
+    white: '0x5f8787'
 
 #shell:
   #program: C:\Windows\System32\wsl.exe # WSL
