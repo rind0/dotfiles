@@ -3,8 +3,8 @@ env:
 
 window:
     dimensions:
-        columns:    100
-        lines:      40
+        columns: 100
+        lines: 40
     opacity: 0.9
 
 # Windows の新しい API conPTY / Windows 10 October 2018 update 以降）を有効。
@@ -14,14 +14,14 @@ enable_experimental_conpty_backend: true
 font:
   normal:
     family: Cica
-    style:  Regular
+    style: Regular
     #family: MyricaM M
   bold:
     family: Cica
-    style:  Bold
+    style: Bold
   italic:
     family: Cica
-    style:  Italic
+    style: Italic
   size: 12
 
 # Colors (Monokai Pro)
@@ -33,25 +33,25 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x403E41'
-    red:     '0xFF6188'
-    green:   '0xA9DC76'
-    yellow:  '0xFFD866'
-    blue:    '0xFC9867'
+    black: '0x403E41'
+    red: '0xFF6188'
+    green: '0xA9DC76'
+    yellow: '0xFFD866'
+    blue: '0xFC9867'
     magenta: '0xAB9DF2'
-    cyan:    '0x78DCE8'
-    white:   '0xFCFCFA'
+    cyan: '0x78DCE8'
+    white: '0xFCFCFA'
 
   # Bright colors
   bright:
-    black:   '0x727072'
-    red:     '0xFF6188'
-    green:   '0xA9DC76'
-    yellow:  '0xFFD866'
-    blue:    '0xFC9867'
+    black: '0x727072'
+    red: '0xFF6188'
+    green: '0xA9DC76'
+    yellow: '0xFFD866'
+    blue: '0xFC9867'
     magenta: '0xAB9DF2'
-    cyan:    '0x78DCE8'
-    white:   '0xFCFCFA'
+    cyan: '0x78DCE8'
+    white: '0xFCFCFA'
 
 #shell:
   #program: C:\Windows\System32\wsl.exe # WSL
