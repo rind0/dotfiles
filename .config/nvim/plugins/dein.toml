@@ -2,47 +2,29 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'davidcelis/vim-ariake-dark'
-
-[[plugins]]
-repo = 'frazrepo/vim-rainbow'
-hook_add = '''
-let g:rainbow_active = 1
+repo = 'windwp/nvim-autopairs'
+on_event = ['InsertEnter']
+hook_post_source = '''
+lua require 'plugins.autopairs'
 '''
 
 [[plugins]]
-repo = 'itchyny/lightline.vim'
-hook_add = '''
-let g:lightline = {
-    \ 'colorscheme': 'seoul256'
-    \ }
+repo = 'shaunsingh/moonlight.nvim'
+
+[[plugins]]
+repo = 'feline-nvim/feline.nvim'
+on_event = ['VimEnter']
+hook_post_source = '''
+lua require 'plugins.feline'
 '''
-
-[[plugins]]
-repo = 'jiangmiao/auto-pairs'
-
-[[plugins]]
-repo = 'vim-denops/denops.vim'
 
 [[plugins]]
 repo = 'nvim-lua/plenary.nvim'
 on_lua = ['plenary']
 
 [[plugins]]
-repo = 'neovim/nvim-lspconfig'
-on_event = ['BufRead', 'CmdlineEnter']
-hook_source = '''
-lua require 'plugins/lsp'
-'''
-
-[[plugins]]
-repo = 'williamboman/nvim-lsp-installer'
-on_source = ['nvim-lspconfig']
-
-[[plugins]]
-repo = 'jose-elias-alvarez/null-ls.nvim'
+repo = 'nvim-telescope/telescope.nvim'
 depends = ['plenary.nvim']
-on_source = ['nvim-lspconfig']
 
 [[plugins]]
 repo = 'notomo/lreload.nvim'

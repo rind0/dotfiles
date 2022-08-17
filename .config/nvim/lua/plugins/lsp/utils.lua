@@ -68,4 +68,9 @@ function M.get_nvim_lsp_capabilities()
     return capabilities
 end
 
+function M.get_cmp_nvim_lsp_capabilities()
+	local capabilities = vim.lsp.protocol.make_client_capabilities()
+	return require 'cmp_nvim_lsp'.update_capabilities(capabilities)
+end
+
 return M

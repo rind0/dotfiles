@@ -1,0 +1,30 @@
+[[plugins]]
+repo = 'hrsh7th/nvim-cmp'
+on_event = ['InsertEnter']
+hook_post_source = '''
+lua require 'plugins.cmp'
+'''
+
+[[plugins]]
+repo = 'hrsh7th/cmp-buffer'
+on_source = ['nvim-cmp']
+
+[[plugins]]
+repo = 'hrsh7th/cmp-path'
+on_source = ['nvim-cmp']
+
+[[plugins]]
+repo = 'hrsh7th/cmp-vsnip'
+on_source = ['nvim-cmp']
+
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip'
+on_source = ['nvim-cmp']
+
+[[plugins]]
+repo = 'hrsh7th/cmp-nvim-lsp'
+on_source = ['nvim-cmp', 'nvim-lspconfig']
+
+[[plugins]]
+repo = 'hrsh7th/cmp-nvim-lsp-signature-help'
+on_source = ['nvim-cmp']

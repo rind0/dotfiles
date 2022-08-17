@@ -1,0 +1,30 @@
+[[plugins]]
+repo = 'neovim/nvim-lspconfig'
+on_event = ['BufRead', 'CmdlineEnter']
+hook_source = '''
+lua require 'plugins.lsp.init'
+'''
+
+[[plugins]]
+repo = 'williamboman/mason.nvim'
+on_source = ['nvim-lspconfig']
+
+[[plugins]]
+repo = 'williamboman/mason-lspconfig.nvim'
+on_source = ['mason.nvim', 'nvim-lspconfig']
+
+[[plugins]]
+repo = 'jose-elias-alvarez/null-ls.nvim'
+depends = ['plenary.nvim']
+on_source = ['nvim-lspconfig']
+
+[[plugins]]
+repo = 'L3MON4D3/LuaSnip'
+on_source = ['nvim-lspconfig']
+
+[[plugins]]
+repo = 'ray-x/lsp_signature.nvim'
+on_source = ['nvim-lspconfig']
+hook_post_source = '''
+lua require 'plugins.lsp.signature'
+'''
