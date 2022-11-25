@@ -5,7 +5,7 @@ window:
     dimensions:
         columns: 100
         lines: 40
-    opacity: 0.9
+    opacity: 0.8
 
 # Windows の新しい API conPTY / Windows 10 October 2018 update 以降）を有効。
 # Powerline や vim でカーソル位置がずれないようにする。
@@ -23,31 +23,8 @@ font:
     style: Italic
   size: 12
 
-colors:
-  primary:
-    background: '0x1e2030'
-    foreground: '0x7f85a3'
-  cursor:
-    text: '0x7f85a3'
-    cursor: '0x808080'
-  normal:
-    black: '0x444a73'
-    red: '0xff5370'
-    green: '0x4fd6be'
-    yellow: '0xffc777'
-    blue: '0x3e68d7'
-    magenta: '0xfc7b7b'
-    cyan: '0x86e1fc'
-    white: '0xd0d0d0'
-  bright:
-    black: '0x828bb8'
-    red: '0xff98a4'
-    green: '0xc3e88d'
-    yellow: '0xffc777'
-    blue: '0x82aaff'
-    magenta: '0xff966c'
-    cyan: '0xb4f9f8'
-    white: '0x5f8787'
+import:
+  - $HOME/.config/alacritty/themes/moonlight.yml
 
 #shell:
   #program: C:\Windows\System32\wsl.exe # WSL
