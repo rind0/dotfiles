@@ -1,74 +1,7 @@
-#
-# Variables
-#
-# Modifier keys
-set $mod Mod4
-
-# Terminal
-set $term alacritty
-
-# Application menu
 set $menu exec fullscreen disable, exec wofi -S drun
 
-#
-# Device settings
-#
-# Input
-input * accel_profile flat
-input type:pointer {
-    pointer_accel 0
-}
-input type:touchpad {
-    tap enable
-}
-
-# Output
-output DP-1 res 1920x1080@144hz pos 0 0
-output DP-2 res 1920x1080@60hz pos 1920 0
-#output * res 1920x1080@144hz pos 0,0
-output * bg $HOME/Pictures/Wallpapers/jehuty_fhd.jpg fill
-
-#
-# Borders
-#
-default_border          none
-default_floating_border none
-
-# Draggable floating window
-floating_modifier $mod
-
-bindsym --to-code {
-    $mod+Return exec $term
-    $mod+d      exec $menu
-
-    # Kill focused window
-    $mod+q kill
-
-    # Change focus
-    $mod+h focus left
-    $mod+j focus down
-    $mod+k focus up
-    $mod+l focus right
-
-    # Move focused window
-    $mod+Shift+h move left
-    $mod+Shift+j move down
-    $mod+Shift+k move up
-    $mod+Shift+l move right
-
-    # Switch the current container between different layout styles
-    $mod+Shift+s split    toggle
-    $mod+Shift+w layout   tabbed
-    $mod+Shift+e layout   toggle split
-
-    $mod+f      fullscreen
-    $mod+space  floating    toggle
-
-    $mod+Shift+c reload
-}
-
 # Load configs
-include ~/.config/sway/config.d/*
+include $HOME/.config/sway/config.d/*
 
 # Load systemd integration
 include /etc/sway/config.d/*
